@@ -17,3 +17,9 @@ allprojects {
         jcenter()
     }
 }
+sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
